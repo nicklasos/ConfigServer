@@ -27,7 +27,9 @@ var_dump($config->getAll());
 $memcache = new Memcache();
 $memcache->connect('localhost', 11211);
 
-$config->setCache(new ConfigServer\Cache\Cache($memcache));
+$config->setCache(new ConfigServer\Cache\Cache($memcache, 300)); // 5 minutes
+
+$config->dropCache();
 ```
 
 ## Custom storage
