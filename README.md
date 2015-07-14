@@ -30,6 +30,29 @@ $memcache->connect('localhost', 11211);
 $config->setCache(new ConfigServer\Cache\Cache($memcache));
 ```
 
+## Custom storage
+```php
+class CustomStorage implements StorageInterface
+{
+    public function set($key, $value)
+    {
+    }
+
+    public function get($key)
+    {
+    }
+
+    public function getAll()
+    {
+    }
+
+    public function drop($key)
+    {
+    }
+}
+
+```
+
 ## Silex provider
 ```php
 $app->register(new ConfigServerProvider());
