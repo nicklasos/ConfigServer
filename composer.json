@@ -1,6 +1,9 @@
 {
     "name": "Nicklasos/ConfigServer",
     "autoload": {
+        "files": [
+            "src/common.php"
+        ],
         "psr-0": {
             "Nicklasos": "src/"
         }
