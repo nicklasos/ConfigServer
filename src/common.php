@@ -1,7 +1,6 @@
 <?php
 // TODO: move to Memcached
 if (!class_exists('Memcache')) {
-    class Memcache {
-        const MEMCACHE_COMPRESSED = 0;
-    }
+    define('MEMCACHE_COMPRESSED', 0);
+    class Memcache {}
 }
