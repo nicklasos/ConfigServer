@@ -9,9 +9,4 @@ class ConfigServerTest extends PHPUnit_Framework_TestCase
     {
         $this->assertInstanceOf(ConfigServer::class, ConfigServer::createDefault());
     }
-
-    public function testSetCache()
-    {
-        $config = ConfigServer::createDefault();
-    }
 }
