@@ -1,5 +1,8 @@
 # Config node
 
+  
+[![Build Status](https://travis-ci.org/nicklasos/ConfigServer.svg?branch=master)](https://travis-ci.org/nicklasos/ConfigServer)
+
 ## Usages:
 ```php
 // MongoDB storage
