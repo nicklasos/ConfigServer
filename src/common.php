@@ -1,4 +1,6 @@
 <?php
 if (!class_exists('Memcache')) {
-    class Memcache {}
+    class Memcache {
+        const MEMCACHE_COMPRESSED = 0;
+    }
 }
