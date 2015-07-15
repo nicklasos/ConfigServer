@@ -1,6 +1,4 @@
 <?php
-
-use Nicklasos\ConfigServer\Cache\NullableMemcache;
 use Nicklasos\ConfigServer\ConfigServer;
 
 class ConfigServerTest extends PHPUnit_Framework_TestCase
