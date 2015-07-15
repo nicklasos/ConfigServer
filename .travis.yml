@@ -21,8 +21,10 @@ cache:
 
 services:
   - mongodb
+  - memcached
 
 sudo: false
 
 install:
+  - composer self-update
   - composer install --prefer-source

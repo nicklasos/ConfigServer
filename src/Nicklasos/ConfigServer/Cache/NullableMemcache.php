@@ -22,3 +22,8 @@ class NullableMemcache extends \Memcache
 
     public function flush() {}
 }
+
+// TODO move to Memcached
+if (!class_exists('Memcache')) {
+    class Memcache {}
+}

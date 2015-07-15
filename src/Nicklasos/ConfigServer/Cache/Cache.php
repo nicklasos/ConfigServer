@@ -89,3 +89,8 @@ class Cache
         $this->cache->set(self::INTERNAL_PREFIX . 'all-keys', array_unique($keys));
     }
 }
+
+// TODO move to Memcached
+if (!class_exists('Memcache')) {
+    class Memcache {}
+}
