@@ -50,8 +50,8 @@ class ConfigServer
 
     public function get($key)
     {
-        if ($key = $this->cache->get($key)) {
-            return $key;
+        if ($value = $this->cache->get($key)) {
+            return $value;
         }
 
         $value = $this->storage->get($key);
