@@ -54,6 +54,8 @@ class Cache
         foreach ($this->cache->get(self::INTERNAL_PREFIX . 'all-keys') as $key) {
             $this->drop($key);
         }
+        
+        $this->cache->delete(self::INTERNAL_PREFIX . 'all-data');
     }
 
     private function dropKey($delete)
